@@ -1,8 +1,9 @@
 :root{
-    --bg-color:#0f172a;
-    --text-color:#f1f5f9;
-       --card-bg: #1e293b;
-    --accent: #38bdf8;
+    --bg-color:#021526;
+    --text-color:#e6dbd9;
+       --card-bg: #03346E;
+    --accent: #E2E2B6;
+    --nav: #03346E;
 }
 
 .light-mode {
@@ -16,6 +17,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 body{
     font-family: 'Segoe UI', sans-serif;
@@ -29,14 +31,16 @@ nav{
     justify-content: space-between;
     align-items: center;
     padding: 20px 50px;
-    background-color: var(--nav-bg);
+    background-color: var(--nav);
     position: sticky;
     top: 0;
+    /* background-color: #96999e; */
 }
 nav ul{
     list-style: none;
     display: flex;
     gap: 20px;
+
 }
 nav a{
     text-decoration: none;
@@ -70,7 +74,7 @@ button:hover{
     transform: scale(1.05);
 }
 section{
-    padding: 80px 20px;
+    padding: 50px 20px;
     text-align: center;
 }
 .skill-box{
@@ -99,4 +103,28 @@ section{
 footer{
     padding: 20px;
     background: var(--nav-bg);
+}
+.light-mode{
+    background-color: #f8fafc;
+    color: #111827;
+}
+.light-mode nav{
+    background-color: #8A7650;
+}
+.light-mode nav a {
+    color: #111827;
+}
+.light-mode nav a:hover {
+    color: #2563eb;
+}
+button{
+    background-color: #8E977D;
+}
+.light-mode .skill-box,
+.light-mode .project-card {
+    background-color: #8E977D;
+}
+.light-mode footer {
+    background-color: #e2e8f0;
+    color: #111827;
 }
