@@ -1,0 +1,102 @@
+:root{
+    --bg-color:#0f172a;
+    --text-color:#f1f5f9;
+       --card-bg: #1e293b;
+    --accent: #38bdf8;
+}
+
+.light-mode {
+    --bg-color: #f8fafc;
+    --text-color: #111827;
+    --nav-bg: #ffffff;
+    --card-bg: #e2e8f0;
+    --accent: #2563eb;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Segoe UI', sans-serif;
+    background:var(--bg-color);
+    color:var(--text-color);
+    transition: 0.3s;
+    scroll-behavior: smooth;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: var(--nav-bg);
+    position: sticky;
+    top: 0;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+nav a{
+    text-decoration: none;
+    color: var(--text-color);
+    transition: 0.3s;
+}
+nav a:hover{
+    color: var(--accent);
+}
+#themeToggle{
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    background: var(--accent);
+}
+header{
+    text-align: center;
+    padding: 100px 20px;
+}
+button{
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    background: var(--accent);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+button:hover{
+    transform: scale(1.05);
+}
+section{
+    padding: 80px 20px;
+    text-align: center;
+}
+.skill-box{
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background: var(--card-bg);
+    border-radius: 20px;
+    transition: 0.3s;
+}
+.skill-box:hover{
+    background: var(--accent);
+    color: black;
+}
+.project-card{
+    background: var(--card-bg);
+    margin: 20px auto;
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.project-card:hover{
+    transform: translateY(-10px);
+}
+footer{
+    padding: 20px;
+    background: var(--nav-bg);
+}
