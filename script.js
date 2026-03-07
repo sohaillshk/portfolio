@@ -20,3 +20,8 @@ toggleBtn.addEventListener("click", () => {
         toggleBtn.textContent = "🌙";
     }
 });
+function scrollToProjects(){
+    document.getElementById("projects").scrollIntoView({
+        behavior: "smooth"
+    });
+}
